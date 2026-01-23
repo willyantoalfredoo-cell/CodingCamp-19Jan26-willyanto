@@ -1,0 +1,59 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.filter-btn {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 2px solid #e5e7eb;
+  background: white;
+  color: #6b7280;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.filter-btn:hover { border-color: #a855f7; color: #a855f7; }
+.filter-btn.active {
+  background: linear-gradient(to right, #a855f7, #ec4899);
+  color: white;
+  border-color: transparent;
+}
+
+.todo-item {
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  background: #f9fafb;
+  transition: all 0.2s;
+}
+.todo-item:hover {
+  background: #f3f4f6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="checkbox"] { width: 20px; height: 20px; cursor: pointer; accent-color: #a855f7; }
+
+.task-text { color: #1f2937; font-weight: 500; }
+.task-done { text-decoration: line-through; color: #9ca3af; }
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.badge-pending { background: #fef3c7; color: #d97706; }
+.badge-done { background: #d1fae5; color: #059669; }
+
+.delete-btn {
+  padding: 6px 12px;
+  background: #fee2e2;
+  color: #dc2626;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.delete-btn:hover { background: #fecaca; }
+
+.btn-add { transition: all 0.3s; }
+.btn-add:hover { transform: scale(1.05); }
